@@ -1,4 +1,4 @@
-package itheima.appstudent;
+package oop.finaldemo.studentcontrol;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,13 +10,8 @@ public class StudentControl {
     private static final String QUERY_STUDENT = "4";
     private static final String EXIT_SYSTEM = "5";
 
-    static ArrayList<Student> list = new ArrayList<>();
-    static {
-        list.add(new Student("1001","张三",20,"北京"));
-        list.add(new Student("1002","lisi",20,"nanjing"));
-    }
-    public static void startStudentSystem() {
-
+    public static void main(String[] args) {
+        ArrayList<Student> list = new ArrayList<>();
         loop:while (true) {
             System.out.println("------------------欢迎来到学生管理系统------------------");
             System.out.println("1:添加学生");

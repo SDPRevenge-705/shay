@@ -5,9 +5,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class AppStudentSystem {
+    static ArrayList<User> list = new ArrayList<>();
+
+    static {
+        list.add(new User("zhangsan","123","441822200306058238","13007253783"));
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<User> list = new ArrayList<>();
         while (true) {
             System.out.println("欢迎来到学生管理系统");
             System.out.println("请选择操作：1登录 2注册 3忘记密码 4退出系统");

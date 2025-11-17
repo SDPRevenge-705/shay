@@ -1,0 +1,5 @@
+package oop.extensdemo.a06extensdemo6;
+
+public class Anime {
+
+}
